@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ccc;
+}
+.header {
+    height: 60px;
+    background-color: #831d1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #2e238d;
+    color: #2e238d;
+    text-shadow: 0px 0px 8px #fff;
+    font-size: 60px;
+    caret-color: transparent;
+}
+.slider {
+    flex: 1;
+    /*Overflow faz com que qualquer item que ultrapasse a área de tela seja cortado, impedindo a criação de uma barra de rolagem*/
+    overflow: hidden;
+}
+.slider--width {
+    height: 100%;
+    display: flex;  
+    transition: all ease 2.0s;  
+}
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e238d;
+    text-shadow: 0px 0px 8px #fff;
+    font-size: 90px;
+}
+.slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider--control {
+    width: 60px;
+    height: 60px;
+    background-color: #831d1c;
+    border: solid 1px #2e238d;
+    box-shadow:0px 0px 8px #2e238d;
+    border-radius: 40%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.arrow {
+    font-size: 40px;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    caret-color: transparent;
+}
